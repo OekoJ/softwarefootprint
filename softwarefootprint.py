@@ -149,7 +149,7 @@ if __name__ == '__main__':
                 sumCpuTimes = sum(everyPidsCpuTime.values())
                 print("%.2f\t%.2f\t%.2f\t%.2f\t%s" % (sumRealTime, now, cpu, sumCpuTimes, pids))
                 print("----------------------------------------------------------")
-                print("\nCommand '"+sys.argv[1]+"' finished")
+                print("\nLoggig for Command '"+sys.argv[1]+"' finished")
                 print("")
                 print("PID\tcpuTime\tCommand")
                 for pid in everyPidsCpuTime:
