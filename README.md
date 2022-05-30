@@ -23,4 +23,6 @@ python -c "exec(\"f=1\nfor n in range(100000):\n\tf=f*(n+1)\nprint(f)\")"
 
 
 # example loads (linux):
-stress --cpu 2 --timeout 10s run 2 cpu-cores with full load for 10 seconds
+stress --cpu 2 --timeout 10s 
+
+run 2 cpu-cores with full load for 10 seconds
