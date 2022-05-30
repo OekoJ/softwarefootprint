@@ -2,7 +2,7 @@
 #
 # softwarefootprint.py
 #
-# Description: How much is the footprint of a software? This script scans the process 
+# Description: Which footprint does a software cause? This script scans the process 
 # statistics for the appearance of a given command name and adds up its CPU runtimes. 
 # Based on this, the script calculates the energy consumption of the software on the 
 # local computer and its greenhouse gas emissions.
