@@ -13,7 +13,7 @@ LOGTIME is an optional value for the maximum logging time in seconds. Logging wi
 example: python softwarefootprint.py firefox 60
 
 The software to be examined must be started in a second terminal window (or in some other way) 
-or must already be running. The programme terminates as soon as CMDNAME no longer appears 
+or must already be running. The program terminates as soon as CMDNAME no longer appears 
 in the process statistics or by cancelling the script with ctrl-c.
 
 # example loads (python)
