@@ -127,6 +127,7 @@ if __name__ == '__main__':
     everyPidsCpuTime = {} # collect also PIDs that have already been stopped
     everyPidsCmdline = {} # collect cmdline also for PIDs that have already been stopped
     print("\nStart the Software '"+sys.argv[1]+"' from another Terminal Window!")
+    print("Stop this logging script by ending '"+sys.argv[1]+"' or by pressing ctrl+c\n")
     try:
         while True:
             cpu, pidsCpuTime, pids, pidsCmdline = get_load(sys.argv[1])
