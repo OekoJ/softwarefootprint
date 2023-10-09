@@ -4,9 +4,9 @@ n = 120000
 fact = 1
 for c in range(n):
     fact = fact * (c+1)
-# calculate horizontal checksum
+# calculate horizontal checksum
 checksum = 0
 for digit in str(fact):
     checksum += int(digit)
-# print
+# print
 print(checksum)
