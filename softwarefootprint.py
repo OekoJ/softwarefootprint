@@ -59,8 +59,12 @@ import sys
 import os
 import psutil
 
+os.system('color')
+COLORSTART = '\033[91m'  # change it, according to the color need
+COLORSTOP = '\033[0m'
+
 # This Computer (CHANGE THESE VALUES TO CURRENT MACHINE)
-max_power = 11 # Watt maximum of current machine
+max_power = 50 # Watt maximum of current machine
 cpu_number = psutil.cpu_count() # number of CPUs in current machine
 
 # This power grid (CHANGE THESE VALUES TO YOUR LOCATION)
@@ -100,7 +104,7 @@ def print_results(sumRealTime,sumCpuPercent,sumCpuTimes):
     print("energyconsumption = cpuTime / cpu_number * max_power")
     print("")
     print("Software Footprint of '"+sys.argv[1]+"' on this Computer:")
-    print("%s\t%i\t%s" % ("Energy Consumption:", energyconsumption, "Ws"))
+    print("%s%s\t%i\t%s%s" % (COLORSTART, "Energy Consumption:", energyconsumption, "Ws", COLORSTOP))
     print("%s\t%.3f\t%s" % ("Carbon emissions:", gCO2_per_Ws * energyconsumption, "gCO2e"))
     print("")
     
